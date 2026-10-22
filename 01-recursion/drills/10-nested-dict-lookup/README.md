@@ -24,13 +24,13 @@ Returns `None` if any key in the path does not exist or if the current node is n
 data = {
     "user": {
         "profile": {
-            "name": "Maadan",
+            "name": "Alex",
             "score": 100
         }
     }
 }
 
-deep_get(data, ["user", "profile", "name"])   # "Maadan"
+deep_get(data, ["user", "profile", "name"])   # "Alex"
 deep_get(data, ["user", "settings", "theme"]) # None
 deep_get(data, [])                           # None
 ```
