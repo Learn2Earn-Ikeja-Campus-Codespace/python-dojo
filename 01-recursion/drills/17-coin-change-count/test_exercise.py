@@ -21,7 +21,7 @@ class TestCoinChange(unittest.TestCase):
         self.assertEqual(coin_change_ways(0, [1, 2]), 1)
 
     def test_large_amount_memoized(self):
-        self.assertEqual(coin_change_ways(50, [1, 2, 5, 10, 25]), 292)
+        self.assertEqual(coin_change_ways(50, [1, 2, 5, 10, 25]), 406)
 
     def test_no_loops(self):
         source = inspect.getsource(coin_change_ways)
