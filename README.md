@@ -58,3 +58,4 @@ module-name/
 1. **No Magic**: When a drill asks you to implement a data structure or algorithm, standard library cheats (`dict`, `set`, `sum()`, `sorted()`) are strictly forbidden.
 2. **Edge Cases First**: Always account for zero, negative numbers, empty collections, single elements, and large inputs.
 3. **Trace Before Running**: If you cannot trace where a return value goes in the call stack, do not guess—draw the stack frames.
+# python_dojo
