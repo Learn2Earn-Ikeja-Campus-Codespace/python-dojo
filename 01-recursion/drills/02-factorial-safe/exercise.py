@@ -19,4 +19,14 @@ def factorial(n: int) -> int:
         TypeError: If n is not an integer.
     """
     # TODO: Implement validation, base case, and recursive step
-    pass
+    if  isinstance(n, (float, str, bool)):
+        raise TypeError("Input must be an integer")
+    if n < 0:
+        raise ValueError("Factorial is not defined for negative numbers")
+    if n <= 1:
+        return 1
+    return n * factorial(n-1)
+
+# print(factorial(True))
+    
+    

@@ -23,4 +23,11 @@ def countdown_sum(n: int) -> int:
         - No sum(), count(), or comprehensions.
     """
     # TODO: Implement type validation, base cases, and recursive step
-    pass
+    if not isinstance(n, int):
+        raise TypeError("Wrong type.")
+    if n <= 0:
+        return 0
+    if n % 2 == 0:
+        n -= 1
+    return n + countdown_sum(n-2)
+
