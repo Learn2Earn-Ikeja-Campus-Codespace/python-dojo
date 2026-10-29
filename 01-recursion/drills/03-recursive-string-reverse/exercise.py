@@ -18,4 +18,10 @@ def reverse_string(text: str) -> str:
         TypeError: If input is not a string.
     """
     # TODO: Implement validation, base cases, and head/tail recursive step
-    pass
+    if not isinstance(text, str):
+        raise TypeError("Input must be a string")
+    if text == "":
+        return text
+    return reverse_string(text[1:]) + text[0]
+
+# print(reverse_string("hello"))

@@ -20,4 +20,14 @@ def count_occurrences(items: list, target, index: int = 0) -> int:
         TypeError: If items is not a list.
     """
     # TODO: Implement validation, base case, and recursive accumulation
-    pass
+    if not isinstance(items, list):
+        raise TypeError("items must be a list")
+    if index >= len(items):
+        return 0
+    if items[index] == target:
+        return 1 + count_occurrences(items, target, index + 1)
+    else:
+        return 0 + count_occurrences(items, target, index + 1)
+
+
+print(count_occurrences([], 5)  )
